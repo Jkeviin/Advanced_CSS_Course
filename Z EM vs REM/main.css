@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #FAB2EA;
+}
+
+h1, h2, .boton {
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin: 1rem;
+    background-color: #830A48;
+    color: white;
+    padding: 1rem;
+    border: 2px solid #FAB2EA;
+    box-shadow: 
+        0 0 0 .25rem #830A48,
+        .75rem .75rem 0 #4A051C;
+    text-align: center;
+}
+
+main {
+    margin: 3rem auto 0 auto;
+    max-width: 62.5rem;
+    padding: 0 3rem;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.row > * {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    background-color: #4A051C;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.boton-chico {
+    font-size: 0.5rem;
+    padding: 1em;
+    margin-inline: 2rem;
+    margin-left: 0;
+}
+
+.boton-normal {
+    font-size: 1rem;
+    padding: 1em;
+    margin-inline: 2rem;
+}
+
+.boton-grande {
+    font-size: 2rem;
+    padding: 1em;
+    margin-inline: 2rem;
+    margin-right: 0;
+}
+
+/* COLUMNA EM */
+
+.col-em {
+    
+}
+
+.col-em h2 {
+    font-size: 2em;
+}
+
+.col-em p {
+    font-size: 1em;
+}
+
+/* COLUMNA REM */
+.col-rem {
+    
+}
+
+.col-rem h2 {
+    font-size: 2rem;
+}
+
+.col-rem p {
+    font-size: 1rem;
+}

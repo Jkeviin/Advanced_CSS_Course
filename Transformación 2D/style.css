@@ -1,0 +1,34 @@
+div{
+    /*Lasintaxises: linear-gradient( angulo, color1, color2, color3, ...);
+    */background: linear-gradient(180deg, red, orange);
+    width: 200px;
+    height: 200px;
+    animation: skew 3s infinite;
+    -webkit-animation: skew 3s infinite;
+
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+
+    animation-direction: alternate;
+    /* animation-direction: alternate porque queremos que la animación se haga en sentido contrario */
+}
+
+@keyframes skew{
+    0%{
+        transform: skew(20deg, 20deg);
+        -webkit-transform: skew(20deg, 20deg);
+        -moz-transform: skew(20deg, 20deg);
+        -ms-transform: skew(20deg, 20deg);
+        -o-transform: skew(20deg, 20deg);
+}
+    100%{
+        transform: skew(-20deg, -20deg);
+        -webkit-transform: skew(-20deg, -20deg)    ;
+        -moz-transform: skew(-20deg, -20deg)    ;
+        -ms-transform: skew(-20deg, -20deg)    ;
+        -o-transform: skew(-20deg, -20deg)    ;
+}
+}

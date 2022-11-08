@@ -1,0 +1,102 @@
+body{
+    background: honeydew;
+}
+
+#envoltura{
+    width: 300px;
+    height: 300px;
+    perspective: 700px; /* La perspectiva en pocas palabras aqui es la distancia que hay entre el objeto y el observador */
+    margin: 100px auto;
+}
+
+.cubo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateY(35deg) rotateX(-38deg);
+    -webkit-transform: rotateY(35deg) rotateX(-38deg);
+    -moz-transform: rotateY(35deg) rotateX(-38deg);
+    -ms-transform: rotateY(35deg) rotateX(-38deg);
+    -o-transform: rotateY(35deg) rotateX(-38deg);
+    transition: 600ms ease-in;
+    -webkit-transition: 600ms ease-in;
+    -moz-transition: 600ms ease-in;
+    -ms-transition: 600ms ease-in;
+    -o-transition: 600ms ease-in;
+}
+
+.cubo:hover{
+    transform:rotateY(125deg) rotateX(155deg);
+    -webkit-transform:rotateY(125deg) rotateX(155deg);
+    -moz-transform:rotateY(125deg) rotateX(155deg);
+    -ms-transform:rotateY(125deg) rotateX(155deg);
+    -o-transform:rotateY(125deg) rotateX(155deg);
+}
+
+.cubo div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: gray;
+}
+
+/* Adelante */
+.cubo div:nth-child(1){
+    background-color: darkblue;
+    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+    -moz-transform: translateZ(75px);
+    -ms-transform: translateZ(75px);
+    -o-transform: translateZ(75px);
+}
+
+/* Atras */
+.cubo div:nth-child(2){
+    background-color: darkred;
+    transform: rotateX(180deg) translateZ(75px);
+    -webkit-transform: rotateX(180deg) translateZ(75px);
+    -moz-transform: rotateX(180deg) translateZ(75px);
+    -ms-transform: rotateX(180deg) translateZ(75px);
+    -o-transform: rotateX(180deg) translateZ(75px);
+}
+
+/* Izquierda */
+.cubo div:nth-child(3){
+    background-color: darkgreen;
+    transform: rotateY(-90deg) translateZ(75px);
+    -webkit-transform: rotateY(-90deg) translateZ(75px);
+    -moz-transform: rotateY(-90deg) translateZ(75px);
+    -ms-transform: rotateY(-90deg) translateZ(75px);
+    -o-transform: rotateY(-90deg) translateZ(75px);
+}
+
+/* Derecha */
+.cubo div:nth-child(4){
+    background-color: darkorange;
+    transform: rotateY(90deg) translateZ(75px);
+    -webkit-transform: rotateY(90deg) translateZ(75px);
+    -moz-transform: rotateY(90deg) translateZ(75px);
+    -ms-transform: rotateY(90deg) translateZ(75px);
+    -o-transform: rotateY(90deg) translateZ(75px);
+}
+
+/* Arriba */
+.cubo div:nth-child(5){
+    background-color: darkviolet;
+    transform: rotateX(90deg) translateZ(75px);
+    -webkit-transform: rotateX(90deg) translateZ(75px);
+    -moz-transform: rotateX(90deg) translateZ(75px);
+    -ms-transform: rotateX(90deg) translateZ(75px);
+    -o-transform: rotateX(90deg) translateZ(75px);
+}
+
+/* Abajo */
+.cubo div:nth-child(6){
+    background-color: darkgoldenrod;
+    transform: rotateX(-90deg) translateZ(75px);
+    -webkit-transform: rotateX(-90deg) translateZ(75px);
+    -moz-transform: rotateX(-90deg) translateZ(75px);
+    -ms-transform: rotateX(-90deg) translateZ(75px);
+    -o-transform: rotateX(-90deg) translateZ(75px);
+}

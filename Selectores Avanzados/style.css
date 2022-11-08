@@ -1,0 +1,142 @@
+/*
+    ?  Selector Hijo:
+  *  Selecciona todos los elementos que esten dentro de otro elemento
+
+  *  Ejemplo:
+  *  p > span {
+  *      color:  blue;
+  *  }
+
+  *  Ejemlo HTML:
+  *  <p>Este es un <span>texto</span> en un parrafo</p>
+
+    ----------------------------------------------
+    ?  Selector Adyacente:
+  *  Selecciona todos los elementos que esten inmediatamente despues de otro elemento
+
+  *  Ejemplo:
+  *  p + span {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p>Este es un parrafo</p>
+  *  <span>Este es un span</span>
+  *  <span>Este es otro span</span>
+
+  *  Lo que haria es que el primer span seria azul y el segundo no
+
+    ----------------------------------------------
+    ?  Selector Hermano:
+  *  Selecciona todos los elementos que esten despues de otro elemento
+
+  *  Ejemplo:
+  *  p ~ span {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p>Este es un parrafo</p>
+  *  <span>Este es un span</span>
+  *  <span>Este es otro span</span>
+
+  *  Lo que haria es que ambos span serian azuls
+
+  *  A diferencia del adyacente, este selecciona todos los elementos que esten despues de otro elemento, no solo el primero
+
+    ----------------------------------------------
+    ?  Selector de Atributo:
+  *  Selecciona todos los elementos que tengan un atributo especifico
+
+  *  Ejemplo:
+  *  [title] {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p title="Este es un parrafo">Este es un parrafo</p>
+  *  <p>Este es otro parrafo</p>
+
+  *  Lo que haria es que el primer parrafo seria azul y el segundo no
+
+    ----------------------------------------------
+    ?  Selector de Atributo con Valor:
+  *  Selecciona todos los elementos que tengan un atributo especifico con un valor especifico
+
+  *  Ejemplo:
+  *  [title="Este es un parrafo"] {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p title="Este es un parrafo">Este es un parrafo</p>
+  *  <p title="Este es otro parrafo">Este es otro parrafo</p>
+
+  *  Lo que haria es que el primer parrafo seria azul y el segundo no
+
+    ----------------------------------------------
+    ?  Selector de Atributo que Contenga un Valor:
+  *  Selecciona todos los elementos que tengan un atributo especifico que contenga un valor especifico
+
+  *  Ejemplo:
+  *  [title*="parrafo"] {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p title="Este es un parrafo">Este es un parrafo</p>
+  *  <p title="Este es otro parrafo">Este es otro parrafo</p>
+
+  *  Lo que haria es que ambos parrafos serian azuls
+
+    ----------------------------------------------
+    ?  Selector de Atributo que Empiece con un Valor:
+  *  Selecciona todos los elementos que tengan un atributo especifico que empiece con un valor especifico
+
+  *  Ejemplo:
+  *  [title^="Este"] {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p title="Este es un parrafo">Este es un parrafo</p>
+  *  <p title="Otro parrafo">Este es otro parrafo</p>
+
+  *  Lo que haria es que el primer parrafo seria azul y el segundo no
+
+    ----------------------------------------------
+    ?  Selector de Atributo que Termine con un Valor:
+  *  Selecciona todos los elementos que tengan un atributo especifico que termine con un valor especifico
+
+  *  Ejemplo:
+  *  [title$="parrafo"] {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p title="Este es un parrafo">Este es un parrafo</p>
+  *  <p title="Este es otro parrafo">Este es otro parrafo</p>
+
+  *  Lo que haria es que ambos parrafos serian azuls
+
+    ----------------------------------------------
+    ?  Selector de Atributo que Contenga una Palabra:
+  *  Selecciona todos los elementos que tengan un atributo especifico que contenga una palabra especifica
+
+  *  Ejemplo:
+  *  [title~="parrafo"] {
+  *      color:  blue;
+  *  }
+
+  *  Ejemplo HTML:
+  *  <p title="Este es un parrafo">Este es un parrafo</p>
+  *  <p title="Este es otro PARRAFO">Este es otro parrafo</p>
+
+  *  Lo que haria es que un parrafo seria azul y el otro no porque la palabra parrafo esta en minusculas en el primer parrafo y en mayusculas en el segundo
+
+    ----------------------------------------------
+
+*/
+[title~="parrafo"] {
+    color:  blue;
+}

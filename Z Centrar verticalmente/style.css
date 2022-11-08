@@ -1,0 +1,98 @@
+/*****************************/
+/** ESTILOS INICIALES **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background: #850391;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid gold;
+}
+
+section:last-child {
+    border: 0;
+}
+
+section > div {
+    border: 3px solid gold;
+    width: 65%;
+    height: 80%;
+}
+
+section > p {
+    color: white;
+    font-family: sans-serif;
+    writing-mode: vertical-rl;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+}
+
+section > div > p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/*****************************/
+/** TABLE **/
+
+.table {
+    display: table;
+}
+
+.table p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/** ABSOLUTE **/
+
+.absolute {
+    position: relative;
+}
+
+.absolute p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+
+/** FLEXBOX **/
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** GRID **/
+
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+
+/** MARGIN **/
+
+.margin {
+    display: flex;
+}
+
+.margin p {
+    margin: auto;
+}

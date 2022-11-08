@@ -1,0 +1,53 @@
+#animacion{
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;  /* Esto es para centrar el elemento */
+    background-color: red;
+    /* Nombre Animación */
+    animation-name: animar;
+    /* Animacion duration es la duración de la animación */
+    animation-duration: 1.5s;
+    /* Animacion timing function  es para definir la velocidad de la animación */
+    animation-timing-function: ease-out;
+    /* Animacion delay es el tiempo que tarda en empezar la animación */
+    animation-delay: 0;
+    /* Animation direction es para indicar si la animación se ejecuta de izquierda a derecha o de derecha a izquierda */
+    animation-direction: alternate;
+    /* Animacion iteracion count es el numero de veces que se repite la animacion */
+    animation-iteration-count: infinite;
+    /* Animacion fill mode es para que el elemento se quede en el estado final */
+    animation-fill-mode: none;
+    /* Animacion play state es para pausar la animación */
+    animation-play-state: running;
+}
+
+@keyframes animar{
+    0%{
+        transform: scale(.3);
+        -webkit-transform: scale(.3);
+        -moz-transform: scale(.3);
+        -ms-transform: scale(.3);
+        -o-transform: scale(.3);
+        background-color: darkred;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        background-color: coral;
+    }
+}
+
+#animacion:hover{
+    animation-play-state: paused;
+}

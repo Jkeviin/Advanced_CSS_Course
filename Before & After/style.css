@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.contenedor{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+h1{
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block; /* Para que el texto se mantenga en una linea, en pocas palabras, para que no se salga de la linea */
+}
+
+h1::before{
+    content: "";
+    width: 30%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s all;
+}
+
+h1::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: 0.5s all;
+}
+
+h1:hover::after{
+    width: 100%;
+}
